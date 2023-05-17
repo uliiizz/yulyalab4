@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Схід та захід сонця</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    
+    <h1>Схід та захід сонця</h1>
+    <form>
+      <label for="date">Дата:</label>
+      <input type="date" id="date" name="date" required /><br /><br />
+      <label for="lat">Широта:</label>
+      <input
+        type="number"
+        id="lat"
+        name="lat"
+        min="-90"
+        max="90"
+        step="any"
+        required
+      /><br /><br />
+      <label for="lng">Довгота:</label>
+      <input
+        type="number"
+        id="lng"
+        name="lng"
+        min="-180"
+        max="180"
+        step="any"
+        required
+      /><br /><br />
+      <input type="submit" value="Дізнатись час" />
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
